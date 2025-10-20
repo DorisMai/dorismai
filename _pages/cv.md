@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -11,54 +11,35 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Biochemistry and Molecular Biology, Caltech, 2024/2025
+* B.S. in Computer Science - Biocomputation, Stanford University, 2019
+  * Visiting student at University of Oxford through Stanford Bing Overseas Studies Program (09/2018 - 03/2019)
 
-Work experience
+Selected professional experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Research Associate - SLAC National Accelerator Laboratory (09/2024 - present)
+  * Develop and implement [machine learning algorithms](https://github.com/DorisMai/abismal_torch) for macromolecular crystallography, and translate research outcomes into operations at LCLS. [Slides (2025 ACA Invited Talk)](https://docs.google.com/presentation/d/1VvBTk06yBm0cFEA91ZJYH0vYohx02drm70LbBemrsxs/edit?usp=sharing)
+  * Support user experiments by assisting their data analysis for real-time feedback and reprocessing.
+  * Mentor students on research projects.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Doctoral research - Caltech (09/2019 - 08/2024)
+  * Developed machine learning-based methods for small molecule electron diffraction data processing. [Preprint](https://chemrxiv.org/engage/chemrxiv/article-details/66bd949820ac769e5fa7d032)
+  * Developed multi-scale free energy calculation methods for probingPROTAC-mediated protein-protein interactions. [Publication](https://pubs.acs.org/doi/full/10.1021/acs.jpcb.2c05795)
+  * Contributed to montage cryo-electron tomography by simulating radiation damage patterns. [Publication](https://www.sciencedirect.com/science/article/pii/S1047847722000302)
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Intern in Chemistry, Modeling, & Informatics - Merck (06/2018 - 09/2018)
+  * Analyzed in-house computational models to predict small moleculedrug properties. [Publication](https://pubs.acs.org/doi/10.1021/acs.jcim.2c00245)
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* Undergraduate research assistant - Stanford University (02/2017 - 06/2018)
+  * Contributed to a graph-based model for predicting protein-ligand binding and other ligand properties. [Publication](https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00507)
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
   
-Teaching
+Services
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Peer reviewer, *Proceedings of the National Academy of Sciences (PNAS)*
+* Peer reviewer, *Journal of Chemical Information and Modeling (JCIM)*
+* Peer reviewer, *FEBS Open Bio*
+* Peer reviewer, Neural Information Processing Systems (NeurIPS) ML4PS workshop
+* Poster award judge for the *Journal on Structural Dynamics* at 2025 ACA Meeting
+* Lead organizer of the workshop "Building a General Inference Engine for Molecular Structures and Ensembles" at the 2025 LCLS/SSRL Users' Meeting
+* IUCr Early Career Board (2025-2028) for *Acta Crystallographic D* and *Acta Crystallographic F*

@@ -61,14 +61,15 @@ $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
-$body-color                 : #fff;
-$background-color           : #fff;
-$code-background-color      : #fafafa;
-$code-background-color-dark : $light-gray;
-$text-color                 : $dark-gray;
-$border-color               : $lighter-gray;
+// Dark theme colors
+$body-color                 : #1a1a1a;  // Dark background
+$background-color           : #1a1a1a;  // Dark background
+$code-background-color      : #2d2d2d;  // Darker code background
+$code-background-color-dark : #404040;  // Even darker for code
+$text-color                 : #e0e0e0;  // Light text
+$border-color               : #404040;  // Dark borders
 
-$primary-color              : #7a8288;
+$primary-color              : #a0a0a0;  // Lighter primary for dark theme
 $success-color              : #62c462;
 $warning-color              : #f89406;
 $danger-color               : #ee5f5b;
@@ -102,11 +103,11 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : $info-color;
-$link-color-hover           : mix(#000, $link-color, 25%);
-$link-color-visited         : mix(#fff, $link-color, 25%);
-$masthead-link-color        : $primary-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+$link-color                 : #66b3ff;  // Brighter blue for dark theme
+$link-color-hover           : #99ccff;  // Lighter blue on hover
+$link-color-visited         : #b366ff;  // Purple for visited links
+$masthead-link-color        : #e0e0e0;  // Light text for masthead
+$masthead-link-color-hover  : #ffffff;  // White on hover
 
 
 /*
