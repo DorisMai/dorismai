@@ -24,7 +24,7 @@ Selected professional experience
 
 * Doctoral research - Caltech (09/2019 - 08/2024)
   * Developed machine learning-based methods for small molecule electron diffraction data processing. [Preprint](https://chemrxiv.org/engage/chemrxiv/article-details/66bd949820ac769e5fa7d032)
-  * Developed multi-scale free energy calculation methods for probingPROTAC-mediated protein-protein interactions. [Publication](https://pubs.acs.org/doi/full/10.1021/acs.jpcb.2c05795)
+  * Developed multi-scale free energy calculation methods for probing PROTAC-mediated protein-protein interactions. [Publication](https://pubs.acs.org/doi/full/10.1021/acs.jpcb.2c05795)
   * Contributed to montage cryo-electron tomography by simulating radiation damage patterns. [Publication](https://www.sciencedirect.com/science/article/pii/S1047847722000302)
 
 * Intern in Chemistry, Modeling, & Informatics - Merck (06/2018 - 09/2018)
