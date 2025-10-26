@@ -9,14 +9,14 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
+---
+# Education
 * Ph.D in Biochemistry and Molecular Biology, Caltech, 2024/2025
 * B.S. in Computer Science - Biocomputation, Stanford University, 2019
   * Visiting student at University of Oxford through Stanford Bing Overseas Studies Program (09/2018 - 03/2019)
 
-Selected professional experience
-======
+---
+# Selected professional experience
 * Research Associate - [MLCV@SLAC](https://lcls-mlcv.github.io/) (09/2024 - present)
   * Develop and implement [machine learning algorithms](https://github.com/DorisMai/abismal_torch) for macromolecular crystallography, and translate research outcomes into operations at LCLS. [Slides (2025 ACA Invited Talk)](https://docs.google.com/presentation/d/1VvBTk06yBm0cFEA91ZJYH0vYohx02drm70LbBemrsxs/edit?usp=sharing)
   * Support user experiments by assisting their data analysis for real-time feedback and reprocessing.
@@ -25,7 +25,7 @@ Selected professional experience
 * Doctoral research - Caltech (09/2019 - 08/2024)
   * Developed machine learning-based methods for small molecule electron diffraction data processing. [Preprint](https://chemrxiv.org/engage/chemrxiv/article-details/66bd949820ac769e5fa7d032)
   * Developed multi-scale free energy calculation methods for probing PROTAC-mediated protein-protein interactions. [Publication](https://pubs.acs.org/doi/full/10.1021/acs.jpcb.2c05795)
-  * Contributed to montage cryo-electron tomography by simulating radiation damage patterns. [Publication](https://www.sciencedirect.com/science/article/pii/S1047847722000302)
+  * Contributed to montage cryo-electron tomography method development on data collectionby simulating radiation damage patterns. [Publication](https://www.sciencedirect.com/science/article/pii/S1047847722000302)
 
 * Intern in Chemistry, Modeling, & Informatics - Merck (06/2018 - 09/2018)
   * Analyzed in-house computational models to predict small moleculedrug properties. [Publication](https://pubs.acs.org/doi/10.1021/acs.jcim.2c00245)
@@ -33,9 +33,8 @@ Selected professional experience
 * Undergraduate research assistant - Stanford University (02/2017 - 06/2018)
   * Contributed to a graph-based model for predicting protein-ligand binding and other ligand properties. [Publication](https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00507)
   
-  
-Services
-======
+---
+# Services
 * Peer reviewer, *Proceedings of the National Academy of Sciences (PNAS)*
 * Peer reviewer, *Journal of Chemical Information and Modeling (JCIM)*
 * Peer reviewer, *FEBS Open Bio*
