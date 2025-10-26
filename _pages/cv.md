@@ -17,7 +17,7 @@ Education
 
 Selected professional experience
 ======
-* Research Associate - SLAC National Accelerator Laboratory (09/2024 - present)
+* Research Associate - [MLCV@SLAC](https://lcls-mlcv.github.io/) (09/2024 - present)
   * Develop and implement [machine learning algorithms](https://github.com/DorisMai/abismal_torch) for macromolecular crystallography, and translate research outcomes into operations at LCLS. [Slides (2025 ACA Invited Talk)](https://docs.google.com/presentation/d/1VvBTk06yBm0cFEA91ZJYH0vYohx02drm70LbBemrsxs/edit?usp=sharing)
   * Support user experiments by assisting their data analysis for real-time feedback and reprocessing.
   * Mentor students on research projects.

@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "hello, world!"
+title                    : "Hello, world!"
 title_separator          : "-"
 name                     : &name "D. M."
 description              : &description "personal description"
@@ -23,7 +23,7 @@ author:
   # Biographic information
   avatar           : "cat.jpg"
   name             : "Doris Mai"
-  bio              : "只可自怡悦"
+  bio              : "只可自怡悦，不堪持赠君"
   location         : "Reciprocal Space"
   uri              : https://discourse.rs-station.org/u/dorismai/summary
   # email            : "none@example.org" 

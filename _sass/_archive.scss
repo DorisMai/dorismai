@@ -2,6 +2,31 @@
    ARCHIVE
    ========================================================================== */
 
+/* Color-coded post tags */
+.post-color-tag {
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  margin-right: 0.5em;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+  color: white;
+  vertical-align: middle;
+}
+
+.post-color-tag--study-notes {
+  background-color: #3498db; /* Blue */
+}
+
+.post-color-tag--paper-reviews {
+  background-color: #827551; /* Khaki */
+}
+
+.post-color-tag--random {
+  background-color: #613a68; /* Purple */
+}
+
 .archive {
   margin-bottom: 2em;
 
