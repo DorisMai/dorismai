@@ -46,56 +46,7 @@ author_profile: true
 </div>
 
 <!-- Tag Filter JavaScript -->
-<script src="{{ base_path }}/assets/js/tag-filter.js"></script>
-<script>
-// Fallback: If external script fails to load, define the function inline
-if (typeof window.tagFilterLoaded === 'undefined') {
-  document.addEventListener('DOMContentLoaded', function() {
-    const tagButtons = document.querySelectorAll('.tag-filter-btn');
-    const postItems = document.querySelectorAll('.post-item');
-    
-    function updateActiveButton(activeButton) {
-      tagButtons.forEach(btn => btn.classList.remove('active'));
-      activeButton.classList.add('active');
-    }
-    
-    function filterPostsByTag(selectedTag) {
-      postItems.forEach(post => {
-        const postTags = post.getAttribute('data-tags').split(',');
-        if (selectedTag === 'all' || postTags.includes(selectedTag)) {
-          post.style.display = 'block';
-        } else {
-          post.style.display = 'none';
-        }
-      });
-      
-      const yearHeaders = document.querySelectorAll('.archive__subtitle');
-      yearHeaders.forEach(header => {
-        const nextElements = [];
-        let nextElement = header.nextElementSibling;
-        
-        while (nextElement && !nextElement.classList.contains('archive__subtitle')) {
-          if (nextElement.classList.contains('post-item')) {
-            nextElements.push(nextElement);
-          }
-          nextElement = nextElement.nextElementSibling;
-        }
-        
-        const hasVisiblePosts = nextElements.some(post => post.style.display !== 'none');
-        header.style.display = hasVisiblePosts ? 'block' : 'none';
-      });
-    }
-    
-    tagButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        const tag = this.getAttribute('data-tag') || 'all';
-        updateActiveButton(this);
-        filterPostsByTag(tag);
-      });
-    });
-  });
-}
-</script>
+{% include tag-filter-script.html %}
 
 <!-- Tag Filter CSS -->
 <style>

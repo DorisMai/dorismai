@@ -1,0 +1,84 @@
+<!-- Tag Filter Script -->
+<script>
+(function() {
+  'use strict';
+  
+  function initTagFilter() {
+    console.log('Tag filter script loading...');
+    var tagButtons = document.querySelectorAll('.tag-filter-btn');
+    var postItems = document.querySelectorAll('.post-item');
+    
+    console.log('Found ' + tagButtons.length + ' tag buttons and ' + postItems.length + ' post items');
+    
+    if (tagButtons.length === 0 || postItems.length === 0) {
+      console.log('Tag filter elements not found, exiting');
+      return; // Exit if elements not found
+    }
+    
+    function updateActiveButton(activeButton) {
+      for (var i = 0; i < tagButtons.length; i++) {
+        tagButtons[i].classList.remove('active');
+      }
+      activeButton.classList.add('active');
+    }
+    
+    function filterPostsByTag(selectedTag) {
+      console.log('Filtering by tag: ' + selectedTag);
+      for (var i = 0; i < postItems.length; i++) {
+        var post = postItems[i];
+        var postTags = post.getAttribute('data-tags').split(',');
+        
+        if (selectedTag === 'all' || postTags.indexOf(selectedTag) !== -1) {
+          post.style.display = 'block';
+        } else {
+          post.style.display = 'none';
+        }
+      }
+      
+      // Hide year headers that have no visible posts
+      var yearHeaders = document.querySelectorAll('.archive__subtitle');
+      for (var j = 0; j < yearHeaders.length; j++) {
+        var header = yearHeaders[j];
+        var nextElements = [];
+        var nextElement = header.nextElementSibling;
+        
+        while (nextElement && !nextElement.classList.contains('archive__subtitle')) {
+          if (nextElement.classList.contains('post-item')) {
+            nextElements.push(nextElement);
+          }
+          nextElement = nextElement.nextElementSibling;
+        }
+        
+        var hasVisiblePosts = false;
+        for (var k = 0; k < nextElements.length; k++) {
+          if (nextElements[k].style.display !== 'none') {
+            hasVisiblePosts = true;
+            break;
+          }
+        }
+        
+        header.style.display = hasVisiblePosts ? 'block' : 'none';
+      }
+    }
+    
+    // Add click event listeners to tag buttons
+    for (var i = 0; i < tagButtons.length; i++) {
+      tagButtons[i].addEventListener('click', function() {
+        console.log('Tag button clicked');
+        var tag = this.getAttribute('data-tag') || 'all';
+        updateActiveButton(this);
+        filterPostsByTag(tag);
+      });
+    }
+    
+    console.log('Tag filter initialized successfully');
+  }
+  
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTagFilter);
+  } else {
+    initTagFilter();
+  }
+})();
+</script>
