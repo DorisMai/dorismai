@@ -46,7 +46,62 @@ author_profile: true
 </div>
 
 <!-- Tag Filter JavaScript -->
-{% include tag-filter-script.html %}
+<script src="{{ base_path }}/assets/js/tag-filter.js"></script>
+<script>
+// Fallback if external script fails to load
+if (typeof filterByTag === 'undefined') {
+  console.log('External script failed, loading fallback');
+  function filterByTag(selectedTag) {
+    console.log('Fallback: Filtering by tag: ' + selectedTag);
+    var tagButtons = document.querySelectorAll('.tag-filter-btn');
+    var postItems = document.querySelectorAll('.post-item');
+    
+    for (var i = 0; i < tagButtons.length; i++) {
+      tagButtons[i].classList.remove('active');
+    }
+    
+    for (var i = 0; i < tagButtons.length; i++) {
+      var button = tagButtons[i];
+      var buttonTag = button.getAttribute('data-tag') || 'all';
+      if (buttonTag === selectedTag) {
+        button.classList.add('active');
+        break;
+      }
+    }
+    
+    for (var i = 0; i < postItems.length; i++) {
+      var post = postItems[i];
+      var postTags = post.getAttribute('data-tags').split(',');
+      if (selectedTag === 'all' || postTags.indexOf(selectedTag) !== -1) {
+        post.style.display = 'block';
+      } else {
+        post.style.display = 'none';
+      }
+    }
+    
+    var yearHeaders = document.querySelectorAll('.archive__subtitle');
+    for (var j = 0; j < yearHeaders.length; j++) {
+      var header = yearHeaders[j];
+      var nextElements = [];
+      var nextElement = header.nextElementSibling;
+      while (nextElement && !nextElement.classList.contains('archive__subtitle')) {
+        if (nextElement.classList.contains('post-item')) {
+          nextElements.push(nextElement);
+        }
+        nextElement = nextElement.nextElementSibling;
+      }
+      var hasVisiblePosts = false;
+      for (var k = 0; k < nextElements.length; k++) {
+        if (nextElements[k].style.display !== 'none') {
+          hasVisiblePosts = true;
+          break;
+        }
+      }
+      header.style.display = hasVisiblePosts ? 'block' : 'none';
+    }
+  }
+}
+</script>
 
 <!-- Tag Filter CSS -->
 <style>

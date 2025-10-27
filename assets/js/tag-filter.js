@@ -1,6 +1,4 @@
-<!-- Tag Filter Script -->
-<script>
-// Global function for onclick handlers
+// Tag Filter JavaScript - External file to avoid Liquid processing issues
 function filterByTag(selectedTag) {
   console.log('Filtering by tag: ' + selectedTag);
   
@@ -67,4 +65,3 @@ document.addEventListener('DOMContentLoaded', function() {
   var postItems = document.querySelectorAll('.post-item');
   console.log('Found ' + tagButtons.length + ' tag buttons and ' + postItems.length + ' post items');
 });
-</script>
